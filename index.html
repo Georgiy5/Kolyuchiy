@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Колючий — территория мужских стрижек</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <a href="#" class="logo" aria-label="Колючий">
+        <img src="./assets/logo.svg" alt="Колючий" />
+      </a>
+
+      <div class="hero__actions">
+        <a href="#reviews" class="btn btn--secondary">Отзывы</a>
+        <a href="#booking" class="btn btn--accent">Запись</a>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <h2 class="section__title">Наши работы</h2>
+
+      <div class="slider slider--work" data-slider>
+        <div class="slider__track">
+          <article class="work-card slider__slide is-active">
+            <img src="./assets/work-1.png" alt="Мужская стрижка и борода" class="work-card__image" />
+          </article>
+          <article class="work-card slider__slide">
+            <img src="./assets/work-1.png" alt="Фейд и контур бороды" class="work-card__image" />
+          </article>
+          <article class="work-card slider__slide">
+            <img src="./assets/work-1.png" alt="Классическая мужская стрижка" class="work-card__image" />
+          </article>
+          <article class="work-card slider__slide">
+            <img src="./assets/work-1.png" alt="Современный кроп" class="work-card__image" />
+          </article>
+        </div>
+
+        <div class="slider-dots slider-dots--inside" aria-label="Навигация по работам">
+          <button class="slider-dot is-active" type="button" aria-label="Слайд 1"></button>
+          <button class="slider-dot" type="button" aria-label="Слайд 2"></button>
+          <button class="slider-dot" type="button" aria-label="Слайд 3"></button>
+          <button class="slider-dot" type="button" aria-label="Слайд 4"></button>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn--accent btn--wide">Посмотреть все</a>
+    </section>
+
+    <section class="section" id="masters">
+      <h2 class="section__title">Мастера</h2>
+
+      <div class="slider slider--masters" data-slider>
+        <div class="slider__track">
+          <article class="master-card slider__slide is-active">
+            <img src="./assets/master-1.png" alt="Барбер Анастасия" class="master-card__image" />
+            <div class="master-card__info">
+              <h3 class="master-card__name">Анастасия</h3>
+              <p class="master-card__place">Колючий. Зорге</p>
+            </div>
+          </article>
+          <article class="master-card slider__slide">
+            <img src="./assets/master-1.png" alt="Барбер Елизавета" class="master-card__image" />
+            <div class="master-card__info">
+              <h3 class="master-card__name">Елизавета</h3>
+              <p class="master-card__place">Колючий. Соборный</p>
+            </div>
+          </article>
+          <article class="master-card slider__slide">
+            <img src="./assets/master-1.png" alt="Барбер София" class="master-card__image" />
+            <div class="master-card__info">
+              <h3 class="master-card__name">София</h3>
+              <p class="master-card__place">Колючий. Зорге</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="slider-dots" aria-label="Навигация по мастерам">
+          <button class="slider-dot is-active" type="button" aria-label="Слайд 1"></button>
+          <button class="slider-dot" type="button" aria-label="Слайд 2"></button>
+          <button class="slider-dot" type="button" aria-label="Слайд 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="booking">
+      <div class="contact-actions">
+        <a href="tel:+79999999999" class="contact-row">
+          <span class="contact-row__icon" aria-hidden="true">📞</span>
+          <span class="btn btn--secondary btn--inside">Колючий. Зорге</span>
+        </a>
+
+        <a href="https://yandex.ru/maps" target="_blank" class="contact-row">
+          <span class="contact-row__icon" aria-hidden="true">📞</span>
+          <span class="btn btn--accent btn--inside">Колючий. Соборный</span>
+        </a>
+
+        <a href="https://t.me/" target="_blank" class="contact-row">
+          <span class="contact-row__icon" aria-hidden="true">➤</span>
+          <span class="btn btn--accent btn--inside">Написать в Telegram</span>
+        </a>
+      </div>
+
+      <div class="map-card" aria-label="Карта филиалов">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2e19c21fe6c1861866ee97b583155427ea77b8fc81d31e87df3ad0edf9158d35&amp;width=640&amp;height=360&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </div>
+
+      <div class="branches">
+        <a href="#" class="branch-link">Колючий | Зорге, 66А</a>
+        <a href="#" class="branch-link">Колючий | Соборный переулок, 90</a>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <article class="review-card">
+        <header class="review-card__header">
+          <div class="review-card__person">
+            <span class="review-card__avatar" aria-hidden="true">V</span>
+            <div>
+              <h3 class="review-card__name">Valera Pohiko</h3>
+              <time class="review-card__date" datetime="2025-12-15">15 декабря 2025</time>
+            </div>
+          </div>
+          <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+        </header>
+
+        <p class="review-card__text">
+          Барбер Серафим профессионал своего дела, все сделал четко и аккуратно, горячие полотенца, приятные крема,
+          бальзам для бороды, средство чтобы краска не растекалась, очень аккуратно бреет опасным лезвием. Сервис на
+          уровне, впервые за долгое время стрижку оценили окружающие и это приятно.
+        </p>
+      </article>
+
+      <a href="#" class="btn btn--accent btn--wide">Все отзывы</a>
+    </section>
+
+    <footer class="footer">© Колючий 2026</footer>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
