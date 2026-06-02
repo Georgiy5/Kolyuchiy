@@ -10,8 +10,7 @@
   --font-text: "Manrope", sans-serif;
 
   --container: 640px;
-  --radius-lg: 26px;
-  --radius-pill: 999px;
+  --radius-pill: 50px;
 }
 
 * {
@@ -24,7 +23,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-text);
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 a {
@@ -38,34 +37,40 @@ img {
 }
 
 .page {
-  width: min(100%, var(--container));
-  margin: 0 auto;
-  padding: 28px 16px 18px;
+  width: 100%;
+  max-width: 680px;
+  padding: 0 20px;
+  margin: auto;
 }
 
 .hero,
 .section {
   width: 100%;
-  margin: 0 auto 34px;
+  margin-bottom: 80px;
+}
+
+#works {
+  margin-top: 100px ;
 }
 
 .logo {
   display: block;
-  width: 255px;
-  margin: 0 auto 30px;
+  width: 100%;
+  margin: 100px auto 80px;
 }
 
 .hero__actions {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 34px;
-  padding: 8px 18px;
+  min-height: 50px;
+  padding: 14px 18px;
   border: none;
   border-radius: var(--radius-pill);
   font-family: var(--font-title);
@@ -90,16 +95,16 @@ img {
 }
 
 .section__title {
-  margin: 0 0 16px;
+  margin-bottom: 30px;
   font-family: var(--font-title);
   font-size: 32px;
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 122%;
 }
 
 .slider {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   overflow: hidden;
   touch-action: pan-y;
 }
@@ -118,7 +123,7 @@ img {
 .master-card,
 .map-card {
   overflow: hidden;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-pill);
 }
 
 .work-card {
@@ -181,9 +186,12 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   background: var(--color-muted);
-  border-radius: 30px 30px 0 0;
-  padding: 12px 34px 11px;
+  border-radius: var(--radius-pill);
+  padding: 24.5px 70px;
 }
 
 .master-card__name {
@@ -191,12 +199,14 @@ img {
   font-family: var(--font-title);
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 122%;
 }
 
 .master-card__place {
-  margin: 2px 0 0;
+  margin: 0;
   font-size: 18px;
+  font-family: var(--font-title);
+  line-height: 122%;
 }
 
 .contacts {
@@ -299,7 +309,7 @@ img {
   font-family: var(--font-title);
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .review-card__date {
@@ -315,7 +325,7 @@ img {
 .review-card__text {
   margin: 0;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 .footer {

@@ -1,0 +1,23 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Georgiy5/Kolyuchiy#readme",
+  "bugs": {
+    "url": "https://github.com/Georgiy5/Kolyuchiy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgiy5/Kolyuchiy.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
+}
