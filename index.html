@@ -12,6 +12,11 @@
     rel="stylesheet"
   />
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+  />
+
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
@@ -30,27 +35,37 @@
     <section class="section" id="works">
       <h2 class="section__title">Наши работы</h2>
 
-      <div class="slider slider--work" data-slider>
-        <div class="slider__track">
-          <article class="work-card slider__slide is-active">
-            <img src="./assets/work-1.png" alt="Мужская стрижка и борода" class="work-card__image" />
-          </article>
-          <article class="work-card slider__slide">
-            <img src="./assets/work-1.png" alt="Фейд и контур бороды" class="work-card__image" />
-          </article>
-          <article class="work-card slider__slide">
-            <img src="./assets/work-1.png" alt="Классическая мужская стрижка" class="work-card__image" />
-          </article>
-          <article class="work-card slider__slide">
-            <img src="./assets/work-1.png" alt="Современный кроп" class="work-card__image" />
-          </article>
-        </div>
+      <div
+        class="slider slider--work splide"
+        data-splide-slider
+        aria-label="Наши работы"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <article class="work-card">
+                <img src="./assets/work-1.png" alt="Мужская стрижка и борода" class="work-card__image" />
+              </article>
+            </li>
 
-        <div class="slider-dots slider-dots--inside" aria-label="Навигация по работам">
-          <button class="slider-dot is-active" type="button" aria-label="Слайд 1"></button>
-          <button class="slider-dot" type="button" aria-label="Слайд 2"></button>
-          <button class="slider-dot" type="button" aria-label="Слайд 3"></button>
-          <button class="slider-dot" type="button" aria-label="Слайд 4"></button>
+            <li class="splide__slide">
+              <article class="work-card">
+                <img src="./assets/work-1.png" alt="Фейд и контур бороды" class="work-card__image" />
+              </article>
+            </li>
+
+            <li class="splide__slide">
+              <article class="work-card">
+                <img src="./assets/work-1.png" alt="Классическая мужская стрижка" class="work-card__image" />
+              </article>
+            </li>
+
+            <li class="splide__slide">
+              <article class="work-card">
+                <img src="./assets/work-1.png" alt="Современный кроп" class="work-card__image" />
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -60,35 +75,43 @@
     <section class="section" id="masters">
       <h2 class="section__title">Мастера</h2>
 
-      <div class="slider slider--masters" data-slider>
-        <div class="slider__track">
-          <article class="master-card slider__slide is-active">
-            <img src="./assets/master-1.png" alt="Барбер Анастасия" class="master-card__image" />
-            <div class="master-card__info">
-              <h3 class="master-card__name">Анастасия</h3>
-              <p class="master-card__place">Колючий. Зорге</p>
-            </div>
-          </article>
-          <article class="master-card slider__slide">
-            <img src="./assets/master-1.png" alt="Барбер Елизавета" class="master-card__image" />
-            <div class="master-card__info">
-              <h3 class="master-card__name">Елизавета</h3>
-              <p class="master-card__place">Колючий. Соборный</p>
-            </div>
-          </article>
-          <article class="master-card slider__slide">
-            <img src="./assets/master-1.png" alt="Барбер София" class="master-card__image" />
-            <div class="master-card__info">
-              <h3 class="master-card__name">София</h3>
-              <p class="master-card__place">Колючий. Зорге</p>
-            </div>
-          </article>
-        </div>
+      <div
+        class="slider slider--masters splide"
+        data-splide-slider
+        aria-label="Мастера"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <article class="master-card">
+                <img src="./assets/master-1.png" alt="Барбер Анастасия" class="master-card__image" />
+                <div class="master-card__info">
+                  <h3 class="master-card__name">Анастасия</h3>
+                  <p class="master-card__place">Колючий. Зорге</p>
+                </div>
+              </article>
+            </li>
 
-        <div class="slider-dots" aria-label="Навигация по мастерам">
-          <button class="slider-dot is-active" type="button" aria-label="Слайд 1"></button>
-          <button class="slider-dot" type="button" aria-label="Слайд 2"></button>
-          <button class="slider-dot" type="button" aria-label="Слайд 3"></button>
+            <li class="splide__slide">
+              <article class="master-card">
+                <img src="./assets/master-1.png" alt="Барбер Елизавета" class="master-card__image" />
+                <div class="master-card__info">
+                  <h3 class="master-card__name">Елизавета</h3>
+                  <p class="master-card__place">Колючий. Соборный</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="splide__slide">
+              <article class="master-card">
+                <img src="./assets/master-1.png" alt="Барбер София" class="master-card__image" />
+                <div class="master-card__info">
+                  <h3 class="master-card__name">София</h3>
+                  <p class="master-card__place">Колючий. Зорге</p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -152,6 +175,7 @@
     <footer class="footer">© Колючий 2026</footer>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

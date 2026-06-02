@@ -50,7 +50,7 @@ img {
 }
 
 #works {
-  margin-top: 100px ;
+  margin-top: 100px;
 }
 
 .logo {
@@ -102,21 +102,66 @@ img {
   line-height: 122%;
 }
 
+/* Splide slider */
+
 .slider {
   position: relative;
   margin-bottom: 20px;
-  overflow: hidden;
-  touch-action: pan-y;
 }
 
-.slider__track {
+.slider .splide__track {
+  border-radius: var(--radius-pill);
+}
+
+.slider .splide__list {
+  align-items: stretch;
+}
+
+.slider .splide__slide {
+  list-style: none;
+}
+
+.slider .splide__pagination {
+  position: static;
   display: flex;
-  transition: transform 0.35s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  padding: 0;
+  transform: none;
 }
 
-.slider__slide {
-  min-width: 100%;
-  flex: 0 0 100%;
+.slider .splide__pagination li {
+  display: flex;
+}
+
+.slider .splide__pagination__page {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #F5F5F5;
+  opacity: 1;
+  transform: none;
+  cursor: pointer;
+}
+
+.slider .splide__pagination__page.is-active {
+  background: var(--color-accent);
+  width: 17px;
+  height: 17px;
+}
+
+.slider--work .splide__pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9px;
+  margin: 0;
+  z-index: 2;
 }
 
 .work-card,
@@ -136,36 +181,6 @@ img {
   object-fit: cover;
   -webkit-user-drag: none;
   user-select: none;
-}
-
-.slider-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-top: 11px;
-}
-
-.slider-dots--inside {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 9px;
-  margin-top: 0;
-}
-
-.slider-dot {
-  width: 8px;
-  height: 8px;
-  border: 0;
-  border-radius: 50%;
-  background: #dddddd;
-  padding: 0;
-  cursor: pointer;
-}
-
-.slider-dot.is-active {
-  background: var(--color-accent);
 }
 
 .master-card {
@@ -335,7 +350,16 @@ img {
 }
 
 @media (max-width: 380px) {
-  .section__title { font-size: 28px; }
+  .section__title {
+    font-size: 28px;
+  }
+
   .master-card__place,
-  .branch-link { font-size: 16px; }
+  .branch-link {
+    font-size: 16px;
+  }
+
+  .master-card__info {
+    padding: 22px 50px;
+  }
 }
