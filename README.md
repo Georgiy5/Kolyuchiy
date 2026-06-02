@@ -1,0 +1,1 @@
+Figma - https://www.figma.com/design/0lLm7w31uD3bqlyNtbvxUe/Инновинум?node-id=913-1911&t=AzR3Qr43dIGflwCV-0
